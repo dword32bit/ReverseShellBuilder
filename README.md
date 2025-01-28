@@ -62,7 +62,7 @@ To remove **ReverseShellBuilder**, you can run the following uninstaller script:
 1. **Download the Uninstaller Script**
 
    ```bash
-   wget https://example.com/path/to/uninstaller.sh
+   wget https://raw.githubusercontent.com/dword32bit/ReverseShellBuilder/refs/heads/main/uninstall.sh
    chmod +x uninstaller.sh
    ```
 
