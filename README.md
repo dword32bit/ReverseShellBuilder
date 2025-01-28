@@ -19,7 +19,7 @@ To install **ReverseShellBuilder**, you can use the provided automated installat
    First, download and make the `reverseshell_installer.sh` script executable:
 
    ```bash
-   wget https://example.com/path/to/reverseshell_installer.sh
+   wget https://raw.githubusercontent.com/dword32bit/ReverseShellBuilder/refs/heads/main/reverseshell_installer.sh
    chmod +x reverseshell_installer.sh
    ```
 
