@@ -1,102 +1,84 @@
-Berikut adalah contoh `README.md` yang menjelaskan program `rebuild` dan cara instalasi menggunakan skrip `reverseshell_installer.sh`.
-
-### `README.md`
-
-```markdown
 # ReverseShellBuilder (Rebuild)
 
-ReverseShellBuilder (Rebuild) adalah alat yang digunakan untuk membuat berbagai jenis payload reverse shell dan menjalankannya pada listener tertentu. Alat ini mendukung berbagai jenis listener seperti `nc`, `ncat`, `socat`, `rustcat`, dan banyak lagi. Anda dapat menggunakan alat ini untuk mendengarkan koneksi dari sistem target setelah reverse shell berhasil dieksekusi.
+ReverseShellBuilder (Rebuild) is a tool designed to create various types of reverse shell payloads and execute them on a specified listener. The tool supports a variety of listeners such as `nc`, `ncat`, `socat`, `rustcat`, and more. You can use this tool to listen for connections from the target system once a reverse shell has been successfully executed.
 
-## Fitur
-- Menyediakan berbagai jenis payload reverse shell untuk listener yang berbeda.
-- Mendukung banyak tool listener seperti `nc`, `ncat`, `socat`, `rustcat`, `pwncat`, dan lainnya.
-- Menyediakan pilihan untuk membuat shell TTY interaktif.
-- Menyimpan dan memuat sesi yang sudah ada.
+## Features
+- Provides various reverse shell payloads for different listener types.
+- Supports multiple listener tools such as `nc`, `ncat`, `socat`, `rustcat`, `pwncat`, and others.
+- Offers the ability to generate interactive TTY shell payloads.
+- Saves and loads existing listener sessions.
 
-## Instalasi
+## Installation
 
-Untuk menginstal **ReverseShellBuilder**, Anda dapat menggunakan skrip instalasi otomatis yang telah disediakan, `reverseshell_installer.sh`. Skrip ini akan mendownload alat ini, memindahkannya ke `/usr/bin/`, serta memastikan bahwa semua dependensi yang diperlukan terinstal.
+To install **ReverseShellBuilder**, you can use the provided automated installation script, `reverseshell_installer.sh`. This script will download the tool, move it to `/usr/bin/`, and ensure that all required dependencies are installed.
 
-### Langkah-langkah Instalasi
+### Installation Steps
 
-1. **Download Skrip Installer**
+1. **Download the Installer Script**
 
-   Pertama, download dan beri izin eksekusi pada skrip `reverseshell_installer.sh`:
+   First, download and make the `reverseshell_installer.sh` script executable:
 
    ```bash
    wget https://example.com/path/to/reverseshell_installer.sh
    chmod +x reverseshell_installer.sh
    ```
 
-2. **Jalankan Skrip Installer**
+2. **Run the Installer Script**
 
-   Setelah memberi izin eksekusi, jalankan skrip installer dengan hak akses root:
+   After making the script executable, run the installer with root privileges:
 
    ```bash
    sudo ./reverseshell_installer.sh
    ```
 
-   Skrip ini akan melakukan hal berikut:
-   - Memeriksa apakah alat yang dibutuhkan (`xterm`, `netcat`, `ncat`, `socat`, `busybox`, `rustcat`, `pwncat`) sudah terinstal.
-   - Menginstal alat yang belum terinstal.
-   - Mendownload dan memindahkan file `rebuild` ke `/usr/bin/`.
-   - Memastikan file `rebuild` dapat dieksekusi.
+   The script will perform the following actions:
+   - Check if the required tools (`xterm`, `netcat`, `ncat`, `socat`, `busybox`, `rustcat`, `pwncat`) are already installed.
+   - Install any missing tools.
+   - Download and move the `rebuild` file to `/usr/bin/`.
+   - Ensure the `rebuild` file is executable.
 
-### Persyaratan Sistem
-- Sistem berbasis Linux (Debian/Ubuntu sangat disarankan).
-- Akses root untuk instalasi dan konfigurasi.
-- Koneksi internet untuk mendownload alat dan dependensi yang diperlukan.
+### System Requirements
+- Linux-based system (Debian/Ubuntu recommended).
+- Root access for installation and configuration.
+- An internet connection to download the required tools and dependencies.
 
-### Menggunakan ReverseShellBuilder
+### Using ReverseShellBuilder
 
-Setelah instalasi selesai, Anda dapat menjalankan **ReverseShellBuilder** dengan perintah berikut:
+Once the installation is complete, you can run **ReverseShellBuilder** by typing the following command:
 
 ```bash
 rebuild
 ```
 
-Program akan menampilkan antarmuka yang memungkinkan Anda untuk:
-1. Mengonfigurasi alamat IP dan port untuk listener.
-2. Memilih listener yang ingin Anda gunakan.
-3. Melihat dan memilih berbagai payload reverse shell untuk digunakan.
+The program will display a menu that allows you to:
+1. Configure the IP address and port for the listener.
+2. Select which listener to use.
+3. View and choose various reverse shell payloads to use.
 
-### Uninstalasi
+### Uninstallation
 
-Untuk menghapus **ReverseShellBuilder**, Anda dapat menjalankan skrip uninstaller berikut:
+To remove **ReverseShellBuilder**, you can run the following uninstaller script:
 
-1. **Download Skrip Uninstaller**
+1. **Download the Uninstaller Script**
 
    ```bash
    wget https://example.com/path/to/uninstaller.sh
    chmod +x uninstaller.sh
    ```
 
-2. **Jalankan Skrip Uninstaller**
+2. **Run the Uninstaller Script**
 
-   Jalankan skrip uninstaller dengan hak akses root untuk menghapus alat:
+   Run the uninstaller with root privileges to remove the tool:
 
    ```bash
    sudo ./uninstaller.sh
    ```
 
-   Skrip ini akan menghapus file `rebuild` dari `/usr/bin` tanpa mempengaruhi alat atau dependensi lainnya.
+   The script will remove the `rebuild` file from `/usr/bin/` without affecting any other tools or dependencies.
 
 ## Contributing
 
-Jika Anda ingin berkontribusi pada proyek ini, Anda dapat melakukannya dengan mengirimkan pull request di GitHub. Pastikan untuk mengikuti pedoman pengembangan yang jelas.
+If you'd like to contribute to this project, feel free to submit a pull request on GitHub. Please follow the development guidelines.
 
-## Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-```
-
-### Penjelasan:
-- **Deskripsi Program**: Menjelaskan apa itu `ReverseShellBuilder` dan fitur-fiturnya.
-- **Instruksi Instalasi**: Menyediakan langkah-langkah untuk menginstal program menggunakan skrip `reverseshell_installer.sh`.
-- **Persyaratan Sistem**: Menjelaskan apa yang dibutuhkan untuk menjalankan program (misalnya sistem berbasis Linux, akses root).
-- **Instruksi Penggunaan**: Memberikan informasi tentang cara menjalankan program dan menggunakan fungsinya.
-- **Uninstalasi**: Menyediakan cara untuk menghapus program jika diperlukan.
-- **Kontribusi**: Menyertakan informasi tentang bagaimana orang bisa berkontribusi pada proyek (ini opsional dan bisa diubah sesuai kebutuhan).
-- **Lisensi**: Menyebutkan lisensi proyek (misalnya MIT License).
-
-Skrip dan instruksi ini akan membantu pengguna memahami cara menginstal dan menggunakan alat dengan mudah. Jangan ragu untuk menyesuaikan URL dan informasi lebih lanjut jika diperlukan!
+## Author
+dword32bit
