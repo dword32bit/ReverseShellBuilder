@@ -12,23 +12,24 @@ ReverseShellBuilder (Rebuild) is a tool designed to create various types of reve
 
 To install **ReverseShellBuilder**, you can use the provided automated installation script, `reverseshell_installer.sh`. This script will download the tool, move it to `/usr/bin/`, and ensure that all required dependencies are installed.
 
-### Installation Steps
+### Setup
 
-1. **Download the Installer Script**
+1. **Download the setup Script**
 
-   First, download and make the `reverseshell_installer.sh` script executable:
+   First, download and make the `setup.sh` script executable:
+   or you can clone my repo
 
    ```bash
-   wget https://raw.githubusercontent.com/dword32bit/ReverseShellBuilder/refs/heads/main/reverseshell_installer.sh
-   chmod +x reverseshell_installer.sh
+   wget https://raw.githubusercontent.com/dword32bit/ReverseShellBuilder/refs/heads/main/setup.sh
+   chmod +x setup.sh
    ```
 
-2. **Run the Installer Script**
+3. **Run the setup Script**
 
    After making the script executable, run the installer with root privileges:
 
    ```bash
-   sudo ./reverseshell_installer.sh
+   sudo ./setup.sh
    ```
 
    The script will perform the following actions:
@@ -54,27 +55,6 @@ The program will display a menu that allows you to:
 1. Configure the IP address and port for the listener.
 2. Select which listener to use.
 3. View and choose various reverse shell payloads to use.
-
-### Uninstallation
-
-To remove **ReverseShellBuilder**, you can run the following uninstaller script:
-
-1. **Download the Uninstaller Script**
-
-   ```bash
-   wget https://raw.githubusercontent.com/dword32bit/ReverseShellBuilder/refs/heads/main/uninstall.sh
-   chmod +x uninstaller.sh
-   ```
-
-2. **Run the Uninstaller Script**
-
-   Run the uninstaller with root privileges to remove the tool:
-
-   ```bash
-   sudo ./uninstaller.sh
-   ```
-
-   The script will remove the `rebuild` file from `/usr/bin/` without affecting any other tools or dependencies.
 
 ## Contributing
 
