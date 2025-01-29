@@ -17,7 +17,7 @@ installed
 
 ## Installation
 
-To install **ReverseShellBuilder**, you can use the provided automated installation script, `reverseshell_installer.sh`. This script will download the tool, move it to `/usr/bin/`, and ensure that all required dependencies are installed.
+To install **ReverseShellBuilder**, you can use the provided automated installation script, `setup.sh > install`. This script will download the tool, move it to `/usr/bin/`, and ensure that all required dependencies are installed.
 
 ### Setup
 
